@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-3.jpeg"
+import AnimatedText from "@/components/AnimatedText";
 
 
 export default function Home() {
@@ -16,6 +17,13 @@ export default function Home() {
               <div className='flex items-center justify-between w-full'>
                   <div className="w-1/2">
                       <Image src={profilePic} alt="skdding" className='w-auto h-auto' />
+                  </div>
+                  <div className="w-1/2 flex flex-col items-center self-center">
+                      <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-6xl"/>
+                      <p>
+                          My name is Sunki Kim!
+                          I’m Front-End Developer
+                      </p>
                   </div>
               </div>
           </Layout>
