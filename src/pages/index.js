@@ -5,6 +5,7 @@ import profilePic from "../../public/images/profile/developer-pic-3.jpeg"
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import {LinkArrow} from "@/components/Icons";
+import Hireme from "@/components/Hireme";
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
                 <Layout className="pt-0">
                     <div className='flex items-center justify-between w-full'>
                         <div className="w-1/2">
-                            <Image src={profilePic} alt="skdding" className='w-auto h-auto'/>
+                            <Image src={profilePic} alt="skdding" className='w-50 h-50'/>
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center">
                             <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-6xl"/>
@@ -27,7 +28,7 @@ export default function Home() {
                                 I’m Front-End Developer
                             </p>
                             {/* tailwind space */}
-                            <div className="flex items-center space-x-10">
+                            <div className="flex space-x-10">
                                 <Link href="/KIM_SUNKI.pdf" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                                 download={true}>
@@ -41,6 +42,8 @@ export default function Home() {
                         </div>
                     </div>
                 </Layout>
+
+                <Hireme />
             </main>
         </>
     )
