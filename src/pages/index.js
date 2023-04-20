@@ -5,7 +5,8 @@ import profilePic from "../../public/images/profile/developer-pic-3.jpeg"
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import {LinkArrow} from "@/components/Icons";
-import Hireme from "@/components/Hireme";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
                                 <Link href="/KIM_SUNKI.pdf" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                                 download={true}>
-                                    이력서 <LinkArrow className={"w-6 ml-1"}/>
+                                    이력서 <LinkArrow className={"w-4 ml-1"}/>
                                 </Link>
                                 <Link href="about" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark">
@@ -43,7 +44,10 @@ export default function Home() {
                     </div>
                 </Layout>
 
-                <Hireme />
+                <HireMe />
+                <div className="absolute right-8 bottom-8 inline-block w-24">
+                    <Image src={lightBulb} alt="skdding" className="w-full h-auto" />
+                </div>
             </main>
         </>
     )
