@@ -23,7 +23,7 @@ export default function Home() {
                             <Image src={profilePic} alt="skdding" className='w-50 h-50'/>
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center">
-                            <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-6xl"/>
+                            <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-5xl"/>
                             <p className="my-4 text-base font-medium">
                                 My name is Sunki Kim!
                                 I’m Front-End Developer
@@ -35,7 +35,7 @@ export default function Home() {
                                 download={true}>
                                     이력서 <LinkArrow className={"w-4 ml-1"}/>
                                 </Link>
-                                <Link href="about" target={"_blank"}
+                                <Link href="about"
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark">
                                     About
                                 </Link>

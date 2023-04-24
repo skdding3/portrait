@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import {useRouter} from "next/router";
-import {GithubIcon, NotionIcon} from "@/components/Icons";
+import {GithubIcon, NotionIcon, VelogIcon} from "@/components/Icons";
 import {motion} from "framer-motion";
 
 const CustomLink = ({href, title, className=''}) => {
@@ -47,6 +47,13 @@ const NavBar = () => {
                           className="mr-3"
                 >
                     <NotionIcon />
+                </motion.a>
+                <motion.a href="https://velog.io/@skdding3" target={"_blank"}
+                          whileHover={{y: -10}}
+                          whileTap={{scale: 0.9}}
+                          className="mr-3"
+                >
+                    <VelogIcon />
                 </motion.a>
             </nav>
             <div className='absolute left-[50%] top-6 translate-x-[50%]'>
