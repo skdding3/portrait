@@ -33,7 +33,7 @@ export default function Home() {
                                 <Link href="/KIM_SUNKI.pdf" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                                 download={true}>
-                                    이력서 <LinkArrow className={"w-4 ml-1"}/>
+                                    이력서 <LinkArrow className={"w-3 ml-1"}/>
                                 </Link>
                                 <Link href="about"
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark">
