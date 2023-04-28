@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import profilePic from "../../public/images/profile/developer-pic-2.jpeg"
 import Image from "next/image";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
             </Head>
             <main className="flex w-full flex-col items-center justify-center">
                 <Layout className="pt-16">
-                    <AnimatedText className="text-4xl mb-16" text="시각적인 감각을 가진 프론트엔드 개발자입니다!"/>
+                    <AnimatedText className="text-5xl mb-16" text="시각적인 감각을 가진 프론트엔드 개발자입니다!"/>
                     <div className="grid w-full grid-cols-8 gap-16">
                         {/* About Me */}
                         <div className="col-span-3 flex flex-col items-start justify-start">
@@ -113,6 +114,7 @@ const About = () => {
 
                     </div>
                     <Skills />
+                    <Experience />
                 </Layout>
             </main>
         </>
