@@ -2,8 +2,9 @@ import React from 'react';
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import {useRouter} from "next/router";
-import {GithubIcon, NotionIcon, VelogIcon} from "@/components/Icons";
+import {GithubIcon, NotionIcon, VelogIcon, SunIcon, MoonIcon} from "@/components/Icons"
 import {motion} from "framer-motion";
+import useThemeSwitcher from "@/components/Hooks/useThemeSwitcher";
 
 const CustomLink = ({href, title, className=''}) => {
     // Router
@@ -19,15 +20,18 @@ const CustomLink = ({href, title, className=''}) => {
             {/* 밑줄 transition */}
             {/* Router에 따라 조건문으로 현재 페이지 밑줄 표기 */}
             <span className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-            ${router.asPath === href ? 'w-full' : 'w-0'}`}>
+            ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-light`}>
             </span>
         </Link>
     )
 }
 
 const NavBar = () => {
+
+    const [mode, setMode] = useThemeSwitcher();
+
     return (
-        <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+        <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
             <nav>
                 <CustomLink href="/" title="Home" className='mr-4'/>
                 <CustomLink href="/about" title="About" className='mx-4'/>
@@ -55,7 +59,18 @@ const NavBar = () => {
                 >
                     <VelogIcon />
                 </motion.a>
+                <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                        className={`ml-3 flex items-center justify-center rounded-full p-1
+                        ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                        `}>
+                    { mode === "dark"
+                        ? <SunIcon className={"fill-dark"} />
+                        : <MoonIcon className={"fill-dark"} /> }
+                </button>
             </nav>
+
+
+
             <div className='absolute left-[50%] top-6 translate-x-[50%]'>
                 {/* 로고는 별도 컴포넌트로 분리 */}
                 <Logo />

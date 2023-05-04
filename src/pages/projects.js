@@ -14,7 +14,8 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
     return (
         <article
-            className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl">
+            className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl relative">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"/>
 
             <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
                 <Image src={img} alt={title} className="w-full h-auto"/>
@@ -41,6 +42,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 const Project = ({title, type, img, link, github, summary}) => {
     return (
         <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"/>
             <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
                 <Image src={img} alt={title} className="w-full h-auto"/>
             </Link>
@@ -75,7 +77,7 @@ const Projects = () => {
                 <Layout className="pt-16">
                     <AnimatedText text="Projects" className="mb-16"/>
 
-                    <div className="grid grid-cols-12 gap-24">
+                    <div className="grid grid-cols-12 gap-24 gap-y-32">
                         <div className="col-span-12">
                             <FeaturedProject
                                 title="Webiznet 실서비스 프로젝트"

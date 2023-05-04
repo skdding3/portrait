@@ -16,7 +16,7 @@ export default function Home() {
                 <title>KIM SUNKI | Main</title>
                 <meta name="description" content="any description"/>
             </Head>
-            <main className='flex items-center text-dark w-full min-h-screen'>
+            <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
                 <Layout className="pt-0">
                     <div className='flex items-center justify-between w-full'>
                         <div className="w-1/2">
@@ -31,12 +31,12 @@ export default function Home() {
                             {/* tailwind space */}
                             <div className="flex space-x-10">
                                 <Link href="/KIM_SUNKI.pdf" target={"_blank"}
-                                      className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
+                                      className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark"
                                 download={true}>
-                                    이력서 <LinkArrow className={"w-3 ml-1"}/>
+                                    이력서 <LinkArrow className={"w-3.5 ml-1"}/>
                                 </Link>
                                 <Link href="about"
-                                      className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark">
+                                      className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:text-light">
                                     About
                                 </Link>
                             </div>
