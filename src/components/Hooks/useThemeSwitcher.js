@@ -4,7 +4,7 @@ const UseThemeSwitcher = () => {
 
     // 브라우저의 테마가 dark 인가 light 인가 구분해주는 쿼리
     const preferDarkQuery = "(prefer-color-scheme: dark)"
-    const [mode, setMode] = useState();
+    const [mode, setMode] = useState("dark");
 
     // EFFECT
     useEffect(() => {

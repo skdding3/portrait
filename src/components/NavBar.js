@@ -57,7 +57,7 @@ const NavBar = () => {
                           whileTap={{scale: 0.9}}
                           className="mr-3"
                 >
-                    <VelogIcon />
+                    <VelogIcon className="dark:bg-light dark:border dark:rounded-lg"/>
                 </motion.a>
                 <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
                         className={`ml-3 flex items-center justify-center rounded-full p-1
