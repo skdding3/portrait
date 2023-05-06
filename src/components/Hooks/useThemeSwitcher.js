@@ -2,8 +2,9 @@ import React,{ useEffect, useState } from 'react';
 
 const UseThemeSwitcher = () => {
 
+    // 브라우저의 테마가 dark 인가 light 인가 구분해주는 쿼리
     const preferDarkQuery = "(prefer-color-scheme: dark)"
-    const [mode, setMode] = useState("");
+    const [mode, setMode] = useState();
 
     // EFFECT
     useEffect(() => {
@@ -31,6 +32,8 @@ const UseThemeSwitcher = () => {
             }
         }
 
+        handleChange();
+
         mediaQuery.addEventListener("change", handleChange)
 
         return () => mediaQuery.removeEventListener("change", handleChange)
@@ -44,6 +47,7 @@ const UseThemeSwitcher = () => {
             document.documentElement.classList.add("dark")
         } else {
             window.localStorage.setItem("theme", "light")
+            document.documentElement.classList.remove("dark")
         }
     },[mode])
 
