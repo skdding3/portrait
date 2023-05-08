@@ -20,7 +20,7 @@ export default function Home() {
                 <Layout className="pt-0">
                     <div className='flex items-center justify-between w-full'>
                         <div className="w-1/2">
-                            <Image src={profilePic} alt="skdding" className='w-50 h-50' priority/>
+                            <Image src={profilePic} alt="skdding" className='w-50 h-50' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"/>
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center">
                             <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-5xl"/>
@@ -33,7 +33,7 @@ export default function Home() {
                                 <Link href="/KIM_SUNKI.pdf" target={"_blank"}
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:border-light hover:dark:text-light"
                                 download={true}>
-                                    이력서 <LinkArrow className={"w-3.5 ml-1"}/>
+                                    이력서 <LinkArrow className={"w-6 ml-1"}/>
                                 </Link>
                                 <Link href="about"
                                       className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:text-light">

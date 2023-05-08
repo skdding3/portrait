@@ -67,7 +67,7 @@ const About = () => {
                         {/* Profile Picture */}
                         <div
                             className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-                            <Image src={profilePic} alt="skdding" className="w-full h-auto rounded-2xl"/>
+                            <Image src={profilePic} alt="skdding" className="w-full h-auto rounded-2xl" priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
                         </div>
 
 
