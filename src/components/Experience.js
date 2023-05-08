@@ -14,7 +14,7 @@ const Details = ({position, company, time, address, work}) => {
             <h3 className="capitalize font-bold text-2xl">
                 {position}&nbsp;<a className="text-sky-600 capitalize">@{company}</a>
             </h3>
-            <span className="capitalize font-medium text-dark/75">
+            <span className="capitalize font-medium text-dark/75 dark:text-light/75">
                 {time} | {address}
             </span>
             <p className="font-medium w-full">
@@ -51,7 +51,7 @@ const Experience = () => {
             <div ref={ref} className="w-[60%] relative">
                 <motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" />
                 <ul>
-                    <Details position="PhotoFreelancer" company="Freelancer" time="" address="" work="MUSINSA, DreamRecord 외 다수" />
+                    <Details position="PhotoFreelancer" company="Freelancer" time="2012-2020" address="Korea,Japan" work="MUSINSA, DreamRecord 외 다수" />
                     <Details position="PhotoGrapher" company="Man's Nonno" time="2017.05-2018.10" address="Japan" work="스트릿 패션 잡지 사진 작업" />
                     <Details position="PhotoGrapher and Design" company="OMNIVERSE" time="2019.12-2021.03" address="Paju" work="CARIN ,Stonehenge ,Rosemont ,모나코어나더" />
                 </ul>
