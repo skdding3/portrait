@@ -58,7 +58,7 @@ export const LinkArrow = ({ className, ...rest }) => (
         width={24}
         height={24}
         viewBox="0 0 24 24"
-        className={`w-full h-auto ${className}`}
+        className={`w-full h-full ${className}`}
         {...rest}
     >
         <path fill="none" d="M0 0h24v24H0z" />
