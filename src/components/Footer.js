@@ -8,7 +8,7 @@ const Footer = () => {
             <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
                 {/*현재 일자 년도 가져옴*/}
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-                <div>
+                <div className="flex items-center lg:py-2">
                     Build With <Link href="/" className="underline underline-offset-2" target={"_blank"}>Sunki</Link>
                 </div>
                 <Link href="/">Hello</Link>

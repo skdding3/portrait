@@ -16,10 +16,10 @@ const About = () => {
             </Head>
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText className="text-4xl mb-16" text="시각적인 감각을 가진 프론트엔드 개발자입니다!"/>
-                    <div className="grid w-full grid-cols-8 gap-16">
+                    <AnimatedText className="text-4xl mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" text="시각적인 감각을 가진 프론트엔드 개발자입니다!"/>
+                    <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                         {/* About Me */}
-                        <div className="col-span-3 flex flex-col items-start justify-start">
+                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4">
                             <h1 className="mb-4 text-2xl font-bold uppercase text-dark dark:text-light">자기소개</h1>
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">흥미있는 길에 대한 꾸준함과 도전</h2>
                             <p className="font-normal text-sm/[15px]">
@@ -72,7 +72,7 @@ const About = () => {
 
 
                         {/* 전화번호 등등 */}
-                        <div className="col-span-2">
+                        <div className="col-span-2 xl:col-span-8 xl:flex-row xl:items-center">
 
                             <div className="mb-4">
                                 <span className="font-bold flex flex-col items-end justify-center">
