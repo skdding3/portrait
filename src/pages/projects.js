@@ -9,6 +9,7 @@ import FeatureProjectImg from "../../public/images/projects/Gangnam.png"
 import Project1Img from "../../public/images/projects/grcord.png"
 import Project2Img from "../../public/images/projects/exchange.png"
 import {motion} from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 
 const FramerImage = motion(Image)
@@ -83,6 +84,7 @@ const Projects = () => {
                 <title>KIM SUNKI | Projects Page </title>
                 <meta name="description" content="any description"/>
             </Head>
+            <TransitionEffect />
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text="Projects" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"/>
