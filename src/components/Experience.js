@@ -40,7 +40,7 @@ const Experience = () => {
             </h2>
             <h3 className="font-bold text-3xl mb-16 w-full text-center">Front-End</h3>
             <div ref={ref} className="w-[60%] relative lg:w-[90%] md:w-full">
-                <motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
+                {/*<motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />*/}
                 <ul className="xs:ml-2">
                     <Details position="AI BootCamp" company="Code States" time="2021.05-2021.11" address="Seoul" work="AI 부트캠프 4기를 수료하였습니다." />
                     <Details position="Bachelor of Science" company="Computer Engineering" time="2022.02 ~ " address="" work="컴퓨터 공학사 과정 진행중입니다."  />
@@ -49,7 +49,7 @@ const Experience = () => {
             </div>
             <h3 className="font-bold text-3xl mb-16 w-full text-center">PhotoGrapher</h3>
             <div ref={ref} className="w-[60%] relative lg:w-[90%] md:w-full">
-                <motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" />
+                {/*<motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" />*/}
                 <ul>
                     <Details position="PhotoFreelancer" company="Freelancer" time="2012-2020" address="Korea,Japan" work="MUSINSA, DreamRecord 외 다수" />
                     <Details position="PhotoGrapher" company="Man's Nonno" time="2017.05-2018.10" address="Japan" work="스트릿 패션 잡지 사진 작업" />

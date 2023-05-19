@@ -25,9 +25,10 @@ export default function Home() {
                             <Image src={profilePic} alt="skdding" className='w-50 h-50 lg:hidden md:inline-block md:w-full' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"/>
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-                            <AnimatedText text="HELLO!! 어서오세요 :)  👋" className="!text-5xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
+                            <AnimatedText text="당신에게 가치있는 개발자가 되고자," className="!text-5xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
+                            <AnimatedText text="시각적 감각을 지닌 Front-End 개발자 김선기입니다." className="!text-5xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
                             <p className="my-4 text-base font-medium ">
-                                My name is Sunki Kim!
+                                Hello! 👋 My name is Sunki Kim!
                                 I’m Front-End Developer
                             </p>
                             {/* tailwind space */}
