@@ -30,6 +30,8 @@ export default function Home() {
                             <p className="my-4 text-base font-medium ">
                                 Hello! 👋 My name is Sunki Kim!
                                 I’m Front-End Developer
+                                <br />
+                                My main focus is to develop the web with React.
                             </p>
                             {/* tailwind space */}
                             <div className="flex space-x-10 lg:self-center">
