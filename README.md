@@ -2,7 +2,7 @@
 
 데모 페이지 : https://portrait-git-main-skdding3.vercel.app/
 
-프로젝트 개요 : 
+프로젝트 개요 : https://skdding.notion.site/NextJS-8e28b688fbf64803ae899990bbf5a5bf
 
 
 
