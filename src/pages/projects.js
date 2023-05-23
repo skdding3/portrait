@@ -126,7 +126,7 @@ const Projects = () => {
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
-                                title="NextJS를 활용한 포트폴리오 페이지 프로젝트"
+                                title="NextJS를 활용한 포트폴리오 페이지"
                                 summary="NextJS로 구현한 포트폴리오 페이지 입니다."
                                 link="https://skdding.notion.site/NextJS-8e28b688fbf64803ae899990bbf5a5bf"
                                 github="https://github.com/skdding3/portrait"
