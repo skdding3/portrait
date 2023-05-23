@@ -5,7 +5,8 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import {GithubIcon} from "@/components/Icons";
-import FeatureProjectImg from "../../public/images/projects/Gangnam.png"
+import FeatureProjectImg1 from "../../public/images/projects/Gangnam.png"
+import FeatureProjectImg2 from "../../public/images/projects/portrait.png"
 import Project1Img from "../../public/images/projects/grcord.png"
 import Project2Img from "../../public/images/projects/exchange.png"
 import {motion} from "framer-motion";
@@ -100,7 +101,7 @@ const Projects = () => {
                                 link="https://skdding.notion.site/d62172b5dd114bc8a91f3102ca39c59e"
                                 github="/"
                                 type="강남구청 웰에이징 정보관리시스템"
-                                img={FeatureProjectImg}
+                                img={FeatureProjectImg1}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
@@ -121,6 +122,16 @@ const Projects = () => {
                                 github="https://github.com/skdding3/ExchangeCalcul"
                                 type="환율계산기"
                                 img={Project2Img}
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                title="NextJS를 활용한 포트폴리오 페이지 프로젝트"
+                                summary="NextJS로 구현한 포트폴리오 페이지 입니다."
+                                link="https://skdding.notion.site/NextJS-8e28b688fbf64803ae899990bbf5a5bf"
+                                github="https://github.com/skdding3/portrait"
+                                type="포트폴리오 페이지"
+                                img={FeatureProjectImg2}
                             />
                         </div>
                     </div>
